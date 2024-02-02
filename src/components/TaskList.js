@@ -7,8 +7,7 @@ function TaskList({ tasks, deleteTask }) {
       {/* display a list of tasks using Task component */}
       {tasks.map((task) => (
         <Task
-          key={task.id}
-          // id={task.id}
+          key={task.text}
           text={task.text}
           category={task.category}
           deleteTask={() => deleteTask(task)}
